@@ -6,8 +6,11 @@
 }
 
 header{
-    background-color: orange;
-    grid-area: header;   
+    display: flex;
+    background-color: #e56515;
+    flex-direction: column;
+    align-items: center;
+    grid-area: header;  
 }
 
 header h1{
@@ -16,14 +19,32 @@ header h1{
     font-family: 'Open Sans', sans-serif;
 }
 
+header nav ul{
+    display: flex;
+    list-style: none;
+    column-gap: 5px;
+    margin-top: 25px;
+    margin-left: 10%;
+}
+
+header nav ul li{
+    padding: 1px;
+    border-style: none;
+    margin-left: 10px;
+    background-color: #e56515;
+}
+
 header h1:hover{
     transform: scale(1.1);
 }
 
 .texto{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 3.5rem;
+    margin-bottom: 5px;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-text-stroke: 1px black;
+    margin-top: 20px;
+    color: white;
+    font-size: 3.5rem; 
 }
 
 /* estilos de footer */
@@ -38,9 +59,15 @@ footer{
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
     min-width: 100;
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 87% 1%;
+    grid-template-areas: "header"
+   "main"
+   "footer";;
 }
 
 html{
@@ -70,17 +97,21 @@ main{
     height: 75vh;
 }
 
-.contenedor{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 12% 87% 1%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    ;
-}
 
 .footer{
     grid-area: footer;    
+}
+
+
+.contenedor3 footer {
+    text-align: center;
+    padding-top: 200px;
+    grid-area: footer;  }
+
+.contenedor3 footer p {
+  text-align: center;
+  background-color: #e56515; }
+
+.button{
+    background-color: #e56515;
 }

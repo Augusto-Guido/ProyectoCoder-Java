@@ -4,6 +4,29 @@ const user = "comprador";
 const pass_comprador = "pass1234";
 
 
+function Moto (marca, modelo, precio){
+    this.marca = marca;
+    this.modelo = modelo;
+    this.precio = precio;
+}
+
+let moto1 = new Moto ("KTM", "200 Ng", 5.380)
+let moto2 = new Moto ("KTM", "200", 4.100)
+let moto3 = new Moto ("KTM", "Adventure 390", 13.000)
+let moto4 = new Moto ("KTM", "250F", 21.000)
+let moto5 = new Moto ("KTM", "200 Ng", 10.998)
+let moto6 = new Moto ("KTM", "200 Ng", 4.300)
+
+
+let edad = prompt ("Ingrese su edad")
+
+if (edad < 18){
+    console.log("no pasa")
+}else{
+    console.log("puede pasar, usted es mayor")
+}
+
+
 function  solicitarDatos(){
 
     let usuario = prompt("Ingrese su usuario");
@@ -122,7 +145,6 @@ function iniciarCarrito(){
 
 
 
-
 function obtenerProducto(cod){ 
 
 
@@ -130,22 +152,22 @@ function obtenerProducto(cod){
     switch(cod){
 
         case "1" : 
-                    producto = "Moto id= 1";
+                    producto = "KTM Duke 200 Ng";
                     break;
         case "2" : 
-                    producto = "Moto id= 2";
+                    producto = "KTM duke 200";
                     break;
         case "3" : 
-                    producto = "Moto id= 3" ;
+                    producto = "KTM Adventure 390" ;
                     break;
         case "4" : 
-                    producto = "Moto id= 4"
+                    producto = "KTM 250F"
                     break;       
         case "5" : 
-                    producto = "Moto id = 5" ;
+                    producto = "KTM Duke 390" ;
                     break;
         case "6":
-                    producto ="Moto id = 6"
+                    producto ="KTM RC 200"
                     break;
 
          default :

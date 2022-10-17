@@ -13,23 +13,154 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="contenedor">
-    <header>
-        <h1 class="texto">TiendaDeMotos</h1>
+<body class="contenedor3">
+    <header class="container-fluid">
+        <div class="row">
+            <h1 class="texto col-6 col-sm-8 col-md-5">TiendaDeMotos</h1>
+            <nav class="navbar navbar-expand-lg bg-menu col-6 col-sm-4 col-md-7">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="Img/carrito.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav pl-auto mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="">Nosotros</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-white" href="">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="">Ubicacion</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     
     <main class="main">
         <h2 class="titulo"> Productos </h2>
 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nobis, velit alias mollitia totam maxime cum, quidem atque itaque, cupiditate incidunt! Praesentium fugiat deleniti optio provident, aperiam repudiandae necessitatibus nesciunt.</p>
-
-        <div class="BloqueProducto">
-            <div class="producto">Moto id=1</div>
-            <div class="producto">Moto id=2</div>
-            <div class="producto">Moto id=3</div>
-            <div class="productoDos">Moto id=4</div>
-            <div class="productoDos">Moto id=5</div>
-            <div class="productoDos">Moto id=6</div>
+        <p> Encontrá tu moto ideal, tenemos diferentes tipos de motos: Naked, Sport, Cross y Adventure.</p>
+        <div class="container">
+            <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="col">
+                        <div class=" card shadow-sm">
+                            <img src="img/2020-KTM-200-Duke-Review-urban-sport-beginner-motorcycle-8.jpg">
+                            <div class="card-body">
+                                <h3 class="card-tittle"> KTM Duke 200 Ng (id= 1)</h3>
+                                <p class="card-text"> U$S 5.380</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="" class="button btn btn-primary"> Detalles</a>
+                                    </div>
+                                    <a href="" class="btn btn-succes"> Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class=" card shadow-sm">
+                            <img src="img/duke.jpg">
+                            <div class="card-body">
+                                <h3 class="card-tittle"> KTM Duke 200 (id= 2)</h3>
+                                <p class="card-text">  U$S 4.100 </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="" class="button btn btn-primary"> Detalles</a>
+                                    </div>
+                                    <a href="" class="btn btn-succes"> Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class=" card shadow-sm">
+                            <img src="img/Adventure.jpg">
+                            <div class="card-body">
+                                <h3 class="card-tittle"> KTM Adventure 390 (id= 3) </h3>
+                                <p class="card-text"> U$S 13.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="" class="button btn btn-primary"> Detalles</a>
+                                    </div>
+                                    <a href="" class="btn btn-succes"> Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class=" card shadow-sm">
+                            <img src="img/Crosss.jpg">
+                            <div class="card-body">
+                                <h4 class="card-tittle"> KTM 250F </h3>
+                                <p class="card-text"> U$S 21.000 (id= 4)</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="" class="button btn btn-primary"> Detalles</a>
+                                    </div>
+                                    <a href="" class="btn btn-succes"> Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class=" card shadow-sm">
+                            <img src="img/k390.jpg">
+                            <div class="card-body">
+                                <h4 class="card-tittle"> KTM Duke 390 (id= 5) </h3>
+                                <p class="card-text"> U$S 10.998</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="" class="button btn btn-primary"> Detalles</a>
+                                    </div>
+                                    <a href="" class="btn btn-succes"> Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class=" card shadow-sm">
+                            <img src="img/rc-1.jpg">
+                            <div class="card-body">
+                                <h4 class="card-tittle"> KTM RC 200 (id= 6) </h3>
+                                <p class="card-text">U$S 4.300 <p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="" class="button btn btn-primary"> Detalles</a>
+                                    </div>
+                                    <a href="" class="btn btn-succes"> Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
